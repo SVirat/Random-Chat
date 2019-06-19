@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/bower_components/semantic/dist/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="/bower_components/toastr/toastr.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="/css/styles.css">
+
+  <title>Random Chat</title>
+</head>
+
+<body class="chat-body">
+  <div>
+  <div class="ui grid">
+    <div class="row outer">
+      <div class="one wide column"></div>
+      <div class="fourteen wide column"><br>
+        <center>
+        <div display="inline-block" class="ui segment blue header centered circular name-card">
+          <i class="fa fa-user-secret"></i>   &nbsp;
+          <span id="username" class="username"></span>
+        </div>
+        </center>
+        <div class="ui vertical grid" id="msgs">
+          <div class="twenty column row"></div>
+        </div>
+        <div class="load-container">
+          <div id="loader-wheel" class="loader"></div>
+          <div class="found" id="found"></div>
+        </div>
+        <div class="quote-container">
+        <div class="quote">
+          <p id="quote"></p>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="one wide column"></div>
+    <div class="row">
+      <div class="five wide column"></div>
+      <div class="six wide column">
+        <div class="ui mini modal transition" id="confirm">
+          <div class="header">
+            Leave Chat?
+          </div>
+          <div class="actions">
+            <center>
+            <div class="ui blue right labeled icon button" id="cancel">
+              I'll stay.
+              <i class="male icon"></i>
+            </div>
+            <div class="ui red right labeled icon button" id="close">
+              Get me out!
+              <i class="sign out icon"></i>
+            </div>
+            </center>
+          </div>
+        </div>
+      </div>
+      <div class="five wide column"></div>
+    </div>
+  </div>
+  <div class="ui bottom full">
+    <center>
+    <div class="ui action icon input full">
+      <button class="ui red right icon button" id="endbtn">
+        <i class="sign out icon"></i>
+      </button>
+      <a href="/chat">
+        <button class="ui blue icon button hide" id="newbtn">
+          <i class="refresh icon"></i>
+        </button>
+      </a>
+      <input type="text" placeholder="Searching for user..." id="message" disabled="true" tabindex="0">
+      <button class="ui blue icon button" id="sendbtn">
+        <i class="comment icon"></i>
+        <span></span>
+      </button>
+      <a href="/">
+        <button class="ui red icon button right-float hide" id="homebtn">
+          <i class="home icon"></i>
+        </button>
+      </a>
+    </div>
+    </center>
+  </div>
+</body>
+<script src="/bower_components/Autolinker.js/dist/Autolinker.min.js"></script>
+<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="/bower_components/socket.io-client/dist/socket.io.js"></script>
+<script src="/bower_components/toastr/toastr.min.js"></script>
+<script src="js/chat.js"></script>
+<script src="/bower_components/aes-js/index.js"></script>
+<script src="js/end.js"></script>
+
+</html>

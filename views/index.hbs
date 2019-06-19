@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Virat's Random Chat" />
+    <meta property="og:description" content="This is a fun project which lets you chat with strangers." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/bower_components/semantic/dist/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+    <title>Random Chat Site</title>
+</head>
+
+<style>
+    
+body {
+  background: #F2F3F4;
+  color: #000;
+  height: 100%;
+  margin: 55px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5; 
+  font-size: 2rem;
+  text-align: center;
+}
+
+  
+h1, h2, h3 {
+  margin: 0;
+  align-content: center;
+  text-align: center;
+  font-weight: 400; }
+h1.lg-heading, h2.lg-heading, h3.lg-heading {
+  font-size: 6rem; }
+h1.md-heading, h2.md-heading, h3.md-heading {
+  font-size: 4rem; }
+h1.sm-heading, h2.sm-heading, h3.sm-heading {
+  margin-bottom: 2rem;
+  /* padding: 0.2rem 1rem; */
+  background: rgba(73, 73, 73, 0); 
+}
+</style>
+<body>
+
+  <h1 class="md-heading"><b>Random Chat Site</b></h1><br>
+
+  <div class="ui segment  header centered">
+    <span class="green-dot"></span> <b>{{ noOfUsers }}</b> online<br><br>
+
+    <center>
+      <div class="chat-button" id="termsAndCo">
+        <i class="chat icon"></i>
+        <span id="username" class="username">Chat!</span>
+      </div>
+    </center>
+  </div>
+  <br>
+   
+  <span>
+    Hello, this is a chat website which randomly connects you to other users online. This site is 
+    inspired by Omegle, and has some other randomized elements integrated to make the experience more fresh.
+    <br><br>
+    I am Virat Singh, the creator of this site. <a href="https://svirat.github.io" target="_blank">Here</a> is my portfolio. <br>
+  </span>
+
+
+</body>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/6.2.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#reserved-urls -->
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+<script src="/js/indexPage.js"></script>
+<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="/bower_components/semantic/dist/semantic.min.js"></script>
+
+</html>
