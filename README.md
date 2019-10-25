@@ -1,4 +1,4 @@
-# random-chat
+# Random Chat
 Randomized Chat
 
 This is an Omegle clone where users can connect randomly and anonymously to each other and chat!
